@@ -18,20 +18,19 @@ To write a Python program to compute the **transpose** of a matrix using **list 
 ---
 
 ## 💻 PROGRAM:
-def wrap(string, max_width):<br>
-    wrapped_lines = []<br>
-    for i in range(0, len(string), max_width):<br>
-        wrapped_lines.append(string[i:i+max_width])<br>
-    return '\n'.join(wrapped_lines)<br>
+n=int(input())<br>
+scl=int(input())<br>
+l=[]<br>
+for i in range(n):<br>
+    x=float(input())<br>
+    l.append(x)<br>
+sq_l=[item*scl for item in l]<br>
+print(l)<br>
+print(sq_l)<br>
+## OUTPUT:
+<img width="757" height="349" alt="image" src="https://github.com/user-attachments/assets/39ea0e9b-240f-4c78-92d2-0d4bb8d7aeab" />
 
-text = input("Enter a long string: ")<br>
-width = int(input("Enter max width: "))<br>
-print("\nWrapped Text:\n")<br>
-print(wrap(text, width))
+## RESULT:
 
-## Sample Output
-<img width="738" height="400" alt="image" src="https://github.com/user-attachments/assets/af0e95a2-459c-468a-8520-ddd15152fde7" />
-
-## Result
-Program is verified successfully.
+Thus the output is verified.
 
