@@ -22,9 +22,24 @@ To write a Python program that reads two matrices from the user and performs mat
 ---
 
 ## 💻 PROGRAM:
-ADD CODE HERE
-
+def read_matrix(n):<br>
+    matrix=[[0]*n for row in range(n)]<br>
+    for i in range(n):<br>
+        lines=list(map(int,input().split()))<br>
+        for j in range(n):<br>
+            matrix[i][j]=lines[j]<br>
+    return matrix<br>
+def print_matrix(M):<br>
+    print("Matrix:")<br>
+    for i in range(len(M)):<br>
+        for j in range(len(M[0])):<br>
+            if(i>j or i==j):<br>
+                print(M[i][j],end=" ")<br>
+            else:<br>
+                print(0,end=" ")<br>
+        print()
 ## OUTPUT:
+<img width="538" height="332" alt="image" src="https://github.com/user-attachments/assets/08230d4f-17d7-4bed-94cb-65290cd3b409" />
 
 ## RESULT:
-
+Thus the output is verified.
