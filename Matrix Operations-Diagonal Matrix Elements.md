@@ -18,27 +18,24 @@ To write a Python program that prints only the diagonal elements of a given matr
 6. Print a newline after each row.
 
 ## 🖥️ Program
-n = int(input("Enter the number of students: "))<br>
-students = []<br>
+rows=int(input())<br>
+columns=int(input())<br>
+matrix=[[0]*columns for row in range(rows)]<br>
+for i in range(rows):<br>
+    lines=list(map(int, input().split()))<br>
+    for j in range(columns):<br>
+        matrix[i][j]=lines[j]<br>
+print(matrix)<br>
+for i in range(rows):<br>
+    for j in range(columns):<br>
+        if(i==j):<br>
+            print(matrix[i][j],end=" ")<br>
+        else:<br>
+            print(' ',end=" ")<br>
+    print()
 
-for _ in range(n):<br>
-    name = input("Enter student's name: ")<br>
-    grade = float(input("Enter student's grade: "))<br>
-    students.append([name, grade])<br>
-
-grades = sorted(set([student[1] for student in students]))<br>
-
-second_lowest_grade = grades[1]<br>
-
-
-second_lowest_students = sorted([student[0] for student in students if student[1] == second_lowest_grade])<br>
-
-for name in second_lowest_students:<br>
-    print(name)<br>
-
-## Output
-<img width="346" height="411" alt="image" src="https://github.com/user-attachments/assets/6d55fa84-77eb-4d68-8cf8-dc759336fb27" />
+### Output:
+<img width="776" height="324" alt="image" src="https://github.com/user-attachments/assets/209c4245-a4d2-4c19-8b30-d2a9ab624f1f" />
 
 ## Result
-
-Thus,the program is executed successfully
+Thus the output is verified.
